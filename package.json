@@ -1,0 +1,38 @@
+{
+  "name": "tution-website",
+  "version": "1.0.0",
+  "description": "inno tuition",
+  "keywords": [
+    "Tuition",
+    "Education",
+    "Classes"
+  ],
+  "license": "ISC",
+  "author": "Inno Tech",
+  "type": "commonjs",
+  "main": "server.js",
+   "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "inno-tuitions": "npm start --prefix ../inno-tuitions",
+    "dev": "concurrently \"npm run server\" \"npm run inno-tuitions\""
+  },
+
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9",
+    "punycode": "^2.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "swiper": "^11.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
