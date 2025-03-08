@@ -2,7 +2,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
-const Appointment = require("./appointmentModel");  // Import appointment model
+const Appointment = require("./appointmentmodel");  // Import appointment model
 const ContactMessage = require("./contactMessageModel");  // Import contact model
 const app = express();
 
