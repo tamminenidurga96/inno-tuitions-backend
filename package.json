@@ -12,7 +12,7 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "nodemon server",
     "inno-tuitions": "npm start --prefix ../inno-tuitions",
     "dev": "concurrently \"npm run server\" \"npm run inno-tuitions\""

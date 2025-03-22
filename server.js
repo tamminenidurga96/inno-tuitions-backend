@@ -16,10 +16,9 @@ app.use(cors());
 const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://tammineni251:HD48xr8uKtzLGeKI@cluster0.7bfjk.mongodb.net/tutionDB";
 
 mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URI)
   .then(() => console.log("✅ Connected to MongoDB!"))
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
-
 // Test Route
 app.get("/", (req, res) => {
   res.send("🚀 Backend is running successfully!");
